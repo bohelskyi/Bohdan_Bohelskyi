@@ -45,8 +45,8 @@ describe("Create and delete user", function () {
     it("New User", async () => {
         newPage = new NewPage(driver);
         let checkAdded = await newPage.addUser(
-            "Barack Obama",
-            "Orange Test",
+            "Odis  Adalwin",
+            "Bohdan Bohelskyi",
             "qWeRtY1234#"
         );
         expect(checkAdded);
@@ -55,8 +55,8 @@ describe("Create and delete user", function () {
     it("Delete User", async () => {
         await homePage.reset();
         let checkRemoved = await homePage.delete(
-            "Barack Obama",
-            "Orange Test",
+            "Odis  Adalwin",
+            "Bohdan Bohelskyi",
             "functionUsedForSearch"
         );
         expect(checkRemoved);
